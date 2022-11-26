@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types';
 import './Button.css';
 
-function Button({ text = 'Кнопка', children }) {
+function Button({ onClick = () => {}, children }) {
+    const onInnerClick = (event) => {
+        onClick(event);
+    }
+    
     return (
-        <button className="CommonButton">{ children }</button>
+        <button onClick={onInnerClick} className="CommonButton">{ children }</button>
     )
 }
 

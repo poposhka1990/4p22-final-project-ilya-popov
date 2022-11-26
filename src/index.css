@@ -13,7 +13,7 @@ code {
 }
 
 .common-header {
-  color: red;
+  font-size: 20px;
 }
 
 .common-price::after {

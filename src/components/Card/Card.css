@@ -1,6 +1,5 @@
 .Card {
-    width: 150px;
-    height: 300px;
+    width: 300px;
     box-shadow: 1px 1px 10px 4px #ccc;
     border-radius: 15px;
     overflow: hidden;
@@ -8,10 +7,17 @@
   
 .Card-container {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 150px);
   }
   
 .Card-img {
     width: 100%;
-    height: 100px;
+    height: 150px;
     object-fit: cover;
+}
+
+.Card-button {
+    margin-top: auto;
 }
