@@ -4,9 +4,11 @@ import Button from './components/Button/Button';
 import Card from './components/Card/Card';
 import Counter from './components/Counter/Counter';
 import Input from './components/Input/Input';
+import { BUTTON_THEMES } from './utils/Constants';
 
 function App() {
   const [ products, setProducts ] = useState([]);
+  const [ isSubscribedButtonDisabled, setIsSubscribeButtoDisabled ] = useState(false);
 
   useEffect(() => {
     fetch('http://fakestoreapi.com/products')
@@ -15,6 +17,15 @@ function App() {
       setProducts(result);
     });
   }, []);
+
+  const onSubscibe = () => {
+    setIsSubscribeButtoDisabled(true);
+
+    setTimeout(() => {
+      setIsSubscribeButtoDisabled(false);
+      console.log('subscribed');
+    }, 2000);
+  }
 
   return (
     <div className="App">
@@ -36,7 +47,7 @@ function App() {
         <h2>Подписаться на новости компании</h2>
         <Input type='email' placeholder='Введите email' name='email' id='email' />
 
-        <Button>Подписаться</Button>
+        <Button disabled={isSubscribedButtonDisabled} theme={BUTTON_THEMES.light} onClick={onSubscibe}>Подписаться</Button>
       </div>
     </div>
   );
