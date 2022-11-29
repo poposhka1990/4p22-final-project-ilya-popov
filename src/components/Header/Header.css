@@ -1,0 +1,8 @@
+.Header {
+    background: red;
+    height: 80px;
+}
+
+.Header h1 {
+    margin: 0;
+}

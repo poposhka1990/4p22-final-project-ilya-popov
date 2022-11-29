@@ -1,9 +1,10 @@
 import './Card.css'
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
-function Card({ img, title, description, price, onClick = () => {} }) {
+function Card({ img, title, description, price, id, onClick = () => {} }) {
     return (
-        <div className='Card' onClick={() => onClick(title)}>
+        <Link to={`product/${id}`} className='Card' onClick={() => onClick(title)}>
             <img className='Card-img' src={ img } alt='title'></img>
             <div className='Card-container'>
                 <h2 className='Card-title common-header'>{ title }</h2>
@@ -13,7 +14,7 @@ function Card({ img, title, description, price, onClick = () => {} }) {
                     <Button>Купить</Button>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
