@@ -3,6 +3,8 @@
     box-shadow: 1px 1px 10px 4px #ccc;
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
   
 .Card-container {

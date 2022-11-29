@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { BUTTON_THEMES } from '../../utils/Constants';
-import './Button.css';
-
+import classNames from 'classnames';
+import './Button.scss';
 
 function Button({ disabled = false, theme = BUTTON_THEMES.dark, onClick = () => {}, children }) {
     const onInnerClick = (event) => {
@@ -9,16 +9,17 @@ function Button({ disabled = false, theme = BUTTON_THEMES.dark, onClick = () => 
         onClick(event);
     }
 
-    let buttonClass = `CommonButton CommonButton--${theme}`;
-
-    if (disabled) {
-        buttonClass += ' CommonButton--disabled';
-    }
-
-
-
     return (
-        <button onClick={onInnerClick} className={buttonClass}>{ children }</button>
+        <button 
+            onClick={onInnerClick}
+            className={classNames('CommonButton',
+                        `CommonButton--${theme}`,
+                        {
+                            'CommonButton--disabled': disabled,
+                        }
+                        )}>
+                { children }
+        </button>
     )
 }
 
