@@ -1,25 +1,22 @@
 import PropTypes from 'prop-types';
-import { BUTTON_THEMES } from '../../utils/Constants';
-import classNames from 'classnames';
-import './Button.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { increment, decrement } from '../../store/counter/counterSlice';
+import './Button.css';
 
-function Button({ disabled = false, theme = BUTTON_THEMES.dark, onClick = () => {}, children }) {
-    const onInnerClick = (event) => {
-        console.log('button clicked!', event)
-        onClick(event);
+function Button({ text = 'Кнопка', children }) {
+    const count = useSelector((state) => state.counter.value)
+    const dispatch = useDispatch();
+
+    const onClick = () => {
+        dispatch(increment());
     }
 
     return (
-        <button 
-            onClick={onInnerClick}
-            className={classNames('CommonButton',
-                        `CommonButton--${theme}`,
-                        {
-                            'CommonButton--disabled': disabled,
-                        }
-                        )}>
-                { children }
-        </button>
+        <>
+            <button className="CommonButton" onClick={onClick}>+</button>
+            <button className="CommonButton">{ children }</button>
+            <button className="CommonButton" onClick={() => dispatch(decrement())}>-</button>
+        </>
     )
 }
 
