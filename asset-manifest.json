@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-ilya-popov/static/css/main.f96b9cae.css",
-    "main.js": "/4p22-final-project-ilya-popov/static/js/main.5beca51f.js",
+    "main.css": "/4p22-final-project-ilya-popov/static/css/main.47af108a.css",
+    "main.js": "/4p22-final-project-ilya-popov/static/js/main.8cfb75e8.js",
+    "static/media/background.jpg": "/4p22-final-project-ilya-popov/static/media/background.5dd5140185f0971de5a1.jpg",
     "index.html": "/4p22-final-project-ilya-popov/index.html",
-    "main.f96b9cae.css.map": "/4p22-final-project-ilya-popov/static/css/main.f96b9cae.css.map",
-    "main.5beca51f.js.map": "/4p22-final-project-ilya-popov/static/js/main.5beca51f.js.map"
+    "main.47af108a.css.map": "/4p22-final-project-ilya-popov/static/css/main.47af108a.css.map",
+    "main.8cfb75e8.js.map": "/4p22-final-project-ilya-popov/static/js/main.8cfb75e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f96b9cae.css",
-    "static/js/main.5beca51f.js"
+    "static/css/main.47af108a.css",
+    "static/js/main.8cfb75e8.js"
   ]
 }
