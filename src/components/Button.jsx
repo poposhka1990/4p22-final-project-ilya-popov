@@ -13,6 +13,6 @@ export const Button = styled.button`
     align-items: center;
     gap: 0.75rem;
 
-    color(--colors-text);
+    color: var(--colors-text);
     cursor: pointer;
 `;
