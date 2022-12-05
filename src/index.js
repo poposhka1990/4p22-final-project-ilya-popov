@@ -10,7 +10,7 @@ import store from './store/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
-        <BrowserRouter basename='4p22-final-project-ilya-popov'>
+        <BrowserRouter>
             <App />
         </BrowserRouter>
     </Provider>
