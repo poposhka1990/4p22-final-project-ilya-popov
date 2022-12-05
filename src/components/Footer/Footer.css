@@ -1,0 +1,10 @@
+.Footer {
+    background: gray;
+    height: 50px;
+    width: 100%;
+}
+
+.Footer p1 {
+    margin: 0 auto;
+    justify-content: center;
+}

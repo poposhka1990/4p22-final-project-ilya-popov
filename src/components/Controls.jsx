@@ -28,7 +28,7 @@ export const Controls = ({onSearch}) => {
     const [region, setRegion] = useState('');
 
     useEffect(() => {
-        const regionValue = region?.value || '';
+        const regionValue = region.value || '';
         onSearch(search, regionValue);
         
         // eslint-disable-next-line

@@ -21,7 +21,7 @@ const InputContainer = styled.label`
 
 const Input = styled.input.attrs({
     type: 'search',
-    placeholder: 'Type a country...',
+    placeholder: 'Enter a country...',
 })`
     margin-left: 2rem;
     border: none;

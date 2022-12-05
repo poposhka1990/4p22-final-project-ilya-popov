@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Button } from "./Button";
 import { Link } from 'react-router-dom';
+import { Button } from './Button';
 
 const Wrapper = styled.article`
     border-radius: var(--radii);
@@ -27,6 +27,7 @@ const CardTitle = styled.h3`
     margin: 0;
     font-size: var(--fs-md);
     font-weight: var(--fw-bold);
+    color: var(--colors-text);
 `;
 
 const CardList = styled.ul`
@@ -39,6 +40,7 @@ const CardListItem = styled.li`
     font-size: var(--fs-sm);
     line-height: 1.5;
     font-weight: var(--fw-light);
+    color: var(--colors-text);
 
     & > b {
         font-weight: var(--fw-bold);
@@ -46,7 +48,7 @@ const CardListItem = styled.li`
 `;
 
 const LinkButton = styled(Link).attrs({
-    to: 'favourites',
+    to: '/favourites',
 })`
     color: var(--colors-text);
     font-size: var(--fs-sm);
