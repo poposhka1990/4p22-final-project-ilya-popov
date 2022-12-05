@@ -24,7 +24,7 @@ function App() {
       <Header/>
       <Main>
         <Routes>
-          <Route path='/' element={<IndexPage countries={countries} setCountries={setCountries}/>} />
+          <Route index element={<IndexPage countries={countries} setCountries={setCountries}/>} />
           <Route path='/country/:name' element={<CountryPage/>} />
           <Route path='/favourites' element={<Favourites/>} />
         </Routes>
