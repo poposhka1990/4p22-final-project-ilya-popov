@@ -12,7 +12,7 @@ function IndexPage() {
   // const [filteredCountries, setFilteredCountries] = useState([]);
 
   useEffect(() => {
-    axios.get(ALL_COUNTRIES)
+    axios.get('https://restcountries.com/v2/all')
     .then(({data}) => setCountries(data))
   }, []);
 
