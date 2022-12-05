@@ -71,7 +71,7 @@ export const Card = ({img, name, info = [], onClick}) => {
                     ))}
                 </CardList>
                 <LinkButton>
-                    <Button>Favourite</Button>
+                    <Button>Add to Favourite</Button>
                 </LinkButton>
             </CardBody>
         </Wrapper>

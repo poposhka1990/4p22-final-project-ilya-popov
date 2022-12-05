@@ -17,8 +17,6 @@ function App() {
     .then(({data}) => setCountries(data))
   }, []);
 
-  console.log(countries);
-
   return (
     <>
       <Header/>

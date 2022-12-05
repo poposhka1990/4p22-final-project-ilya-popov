@@ -8,7 +8,7 @@ import { searchByCountry } from "../config";
 
 export const CountryPage = () => {
     const { name } = useParams();
-    const { push, goBack } = useNavigate();
+    // const { push, goBack } = useNavigate();
     const [country, setCountry] = useState(null);
 
     useEffect(() => {
