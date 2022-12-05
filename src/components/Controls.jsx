@@ -37,7 +37,12 @@ export const Controls = ({onSearch}) => {
     return (
         <Wrapper>
             <Search search={search} setSearch={setSearch} />
+<<<<<<< HEAD
             <CustomSelect options={options}
+=======
+            <CustomSelect 
+                options={options} 
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
                 placeholder="Filter by Region" 
                 isClearable
                 isSearchable={false}

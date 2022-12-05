@@ -21,12 +21,20 @@ const InputContainer = styled.label`
 
 const Input = styled.input.attrs({
     type: 'search',
+<<<<<<< HEAD
     placeholder: 'Type a country...',
+=======
+    placeholder: 'Enter a country...',
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
 })`
     margin-left: 2rem;
     border: none;
     outline: none;
+<<<<<<< HEAD
     color: var(--colors-text);
+=======
+    color: var(--color-text);
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
     background-color: var(--colors-ui-base);
 `;
 

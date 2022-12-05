@@ -1,6 +1,9 @@
 import styled from "styled-components";
+<<<<<<< HEAD
 import { Button } from "./Button";
 import { Link } from 'react-router-dom';
+=======
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
 
 const Wrapper = styled.article`
     border-radius: var(--radii);
@@ -45,6 +48,7 @@ const CardListItem = styled.li`
     }
 `;
 
+<<<<<<< HEAD
 const LinkButton = styled(Link).attrs({
     to: 'favourites',
 })`
@@ -54,6 +58,8 @@ const LinkButton = styled(Link).attrs({
     font-weight: var(--fw-bold);
 `;
 
+=======
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
 
 export const Card = ({img, name, info = [], onClick}) => {
     return (
@@ -68,9 +74,12 @@ export const Card = ({img, name, info = [], onClick}) => {
                         </CardListItem>
                     ))}
                 </CardList>
+<<<<<<< HEAD
                 <LinkButton>
                     <Button>Favourite</Button>
                 </LinkButton>
+=======
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
             </CardBody>
         </Wrapper>
     )

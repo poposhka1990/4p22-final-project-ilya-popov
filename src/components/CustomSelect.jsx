@@ -40,6 +40,10 @@ export const CustomSelect = styled(Select).attrs({
     }
 
     & > div[id] {
+<<<<<<< HEAD
         background-color: var(--colors-ui-base);
+=======
+        background-color: var(---colors-ui-base);
+>>>>>>> 8dd84c2e092a9847d708ed1007a82ccb580f8488
     }
 `;
